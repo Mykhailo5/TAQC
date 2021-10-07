@@ -5,10 +5,11 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        double radius = 8.5;
-        double perimeter = 2 * Math.PI * radius;
-        System.out.println("Perimeter is = " + perimeter);
-        double area = Math.PI * radius * radius;
-        System.out.println("Area is = " + area);
+      Scanner in = new Scanner(System.in);
+      System.out.println("What is your name?");
+      String name = in.nextLine();
+      System.out.println("Where do you live," + name + "?");
+      String address = in.nextLine();
+      System.out.printf("Your name is:%s, You live in:%s", name, address);
     }
 }
