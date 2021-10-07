@@ -5,9 +5,10 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        System.out.println("How are you?");
-        String answer = in.nextLine();
-        System.out.println("You are "+ answer);
+        double radius = 8.5;
+        double perimeter = 2 * Math.PI * radius;
+        System.out.println("Perimeter is = " + perimeter);
+        double area = Math.PI * radius * radius;
+        System.out.println("Area is = " + area);
     }
 }
