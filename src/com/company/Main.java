@@ -5,12 +5,21 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        int rez = 0;
-        Scanner in = new Scanner(System.in);
-        System.out.println("input a");
-        int a = in.nextInt();
-        System.out.println("Input b");
-        int b = in.nextInt();
-        System.out.printf("rez = %d, %d, %d, %d,\n", a+b, a-b, a*b, a/b);
+        Bird[] b = new Bird[3];
+        b[0]=new Eagle();
+        b[1]=new Swallow();
+        b[2]=new Penguin();
+
+        b[0].fly();
+        System.out.println(b[0].feathers);
+        System.out.println(b[0].layEggs);
+        System.out.println("-----------------");
+        b[1].fly();
+        System.out.println(b[1].feathers);
+        System.out.println(b[1].layEggs);
+        System.out.println("-----------------");
+        b[2].fly();
+        System.out.println(b[2].feathers);
+        System.out.println(b[2].layEggs);
     }
 }
