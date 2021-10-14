@@ -4,13 +4,11 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) {
-        int rez = 0;
-        Scanner in = new Scanner(System.in);
-        System.out.println("input a");
-        int a = in.nextInt();
-        System.out.println("Input b");
-        int b = in.nextInt();
-        System.out.printf("rez = %d, %d, %d, %d,\n", a+b, a-b, a*b, a/b);
+    public static void main(String[] args) throws Exception {
+        System.out.println(squareRectangle(5,-9));
+    }
+    public static int squareRectangle (int width, int height) throws Exception {
+        if(width<0 || height<0) throw new Exception("Number is less than 0");
+        return (width * height);
     }
 }
